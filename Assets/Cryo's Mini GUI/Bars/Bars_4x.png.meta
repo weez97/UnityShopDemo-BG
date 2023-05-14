@@ -136,7 +136,7 @@ TextureImporter:
         width: 160
         height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 16, y: 16, z: 16, w: 16}
       outline: []
       physicsShape: []
@@ -144,6 +144,27 @@ TextureImporter:
       bones: []
       spriteID: 93ab3b2e0d3be438bb2195ad8934fe7e
       internalID: -2105003750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bars_4x_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 144
+        width: 160
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 16, y: 16, z: 16, w: 16}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7942974f235174c088977ffc2098f212
+      internalID: 2024749675
       vertices: []
       indices: 
       edges: []
@@ -160,6 +181,7 @@ TextureImporter:
     secondaryTextures: []
     nameFileIdTable:
       Bars_4x_0: -2105003750
+      Bars_4x_1: 2024749675
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

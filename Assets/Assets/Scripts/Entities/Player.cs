@@ -8,6 +8,7 @@ public class Player : MonoBehaviour
 
     private Animator animator;
     private Rigidbody2D rb;
+    private BoxCollider2D b_collider;
     private bool can_move = false;
     public bool CanMove { set { can_move = value; } }
     private Vector2 last_dir;
@@ -18,6 +19,7 @@ public class Player : MonoBehaviour
     {
         animator = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
+        b_collider = GetComponent<BoxCollider2D>();
     }
 
     private void Start()
@@ -69,14 +71,45 @@ public class Player : MonoBehaviour
 
         rb.velocity = speed * dir;
     }
+#if UNITY_EDITOR
+    void OnDrawGizmos()
+    {
+        Gizmos.color = Color.green;
+
+        Gizmos.DrawSphere(RayOrigin(), 0.15f);
+    }
+#endif
 
     private void Interact()
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            RaycastHit2D hit = Physics2D.Raycast(transform.position, last_dir, 1.25f);
-            Debug.LogError(hit.collider.name);
+            RaycastHit2D hit = Physics2D.CircleCast(RayOrigin(), 0.15f, last_dir, 1.25f);
+
+            if (!hit) return;
+
+            if (hit.collider.tag != "Interactable") return;
+
+            hit.transform.GetComponent<InteractableObject>().Interact();
         }
         // UiManager.instance.counter.Show();
+    }
+
+    private Vector2 RayOrigin()
+    {
+        float x = transform.position.x;
+        float y = transform.position.y;
+
+        if (last_dir == Vector2.up)
+            return new Vector2(x, y + (b_collider.size.y + b_collider.offset.y));
+        if (last_dir == Vector2.down || last_dir == Vector2.zero)
+            return new Vector2(x, y - b_collider.offset.y);
+
+        if (last_dir == Vector2.left)
+            x -= (b_collider.size.x + b_collider.offset.x);
+        if (last_dir == Vector2.right)
+            x += (b_collider.size.x + b_collider.offset.x);
+        return new Vector2(x, y + b_collider.offset.y);
+
     }
 }
