@@ -10678,7 +10678,7 @@ MonoBehaviour:
     outfit_anim: {fileID: 9100000, guid: de8d80da7703eb34d9e26559b20554b9, type: 2}
   - id: hulk
     outfit_anim: {fileID: 9100000, guid: d5ebac0e9e8b448499483d081114f7a6, type: 2}
-  - id: default
+  - id: orange
     outfit_anim: {fileID: 9100000, guid: f3bd5727c2a8e6f41ad40969f1c3af91, type: 2}
 --- !u!1 &1216202779
 GameObject:

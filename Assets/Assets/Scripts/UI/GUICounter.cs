@@ -49,7 +49,7 @@ public class GUICounter : GUIElement
         });
     }
 
-    public void IncreaseCounter(int amount) 
+    public void UpdateCounter(int amount) 
     {
         Show();
         txt.DOCounter(last_amount, amount, 1.25f);

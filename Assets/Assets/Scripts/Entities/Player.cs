@@ -13,22 +13,16 @@ public class Player : MonoBehaviour
     public bool CanMove { set { can_move = value; } }
     private Vector2 last_dir;
 
-    private int wallet = 0;
-    private List<string> owned_outfits = new List<string>();
-
     void Awake()
     {
         animator = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
         b_collider = GetComponent<BoxCollider2D>();
-        
-        // add default outfit 
-        owned_outfits.Add("default");
     }
 
     private void Start()
     {
-        Reward.onPay += GetPaid;
+        
     }
 
     private void Update()
@@ -37,9 +31,6 @@ public class Player : MonoBehaviour
         {
             Move();
             Interact();
-
-            if (Input.GetKeyDown(KeyCode.E))
-                ChangeOutfit();
         }
     }
 
@@ -119,15 +110,8 @@ public class Player : MonoBehaviour
 
     }
 
-    private void GetPaid(int amount)
+    public void ChangeOutfit(string id)
     {
-        wallet += amount;
-
-        UiManager.instance.counter.IncreaseCounter(wallet);
-    }
-
-    private void ChangeOutfit()
-    {
-        animator.runtimeAnimatorController = OutfitLibrary.instance.GetOutfit("batman");
+        animator.runtimeAnimatorController = OutfitLibrary.instance.GetOutfit(id);
     }
 }
