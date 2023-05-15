@@ -529,6 +529,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 86960148}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &91470329 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2055102311959635369, guid: 413081fc53a78a043b38591243616398,
+    type: 3}
+  m_PrefabInstance: {fileID: 405736657}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &99427776
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -881,7 +887,7 @@ PrefabInstance:
     - target: {fileID: 2055102311959635375, guid: 6d9a1504606c57143b1a8bbc2249aabe,
         type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 2055102311959635375, guid: 6d9a1504606c57143b1a8bbc2249aabe,
         type: 3}
@@ -2437,7 +2443,7 @@ PrefabInstance:
     - target: {fileID: 2055102311959635375, guid: 3fcd8726c7cd53345947949baefbab35,
         type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 2055102311959635375, guid: 3fcd8726c7cd53345947949baefbab35,
         type: 3}
@@ -2572,6 +2578,25 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 295850804}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &305401200 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2055102311959635369, guid: 6d9a1504606c57143b1a8bbc2249aabe,
+    type: 3}
+  m_PrefabInstance: {fileID: 133015536}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &305401203
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 305401200}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1adece6093c8406a828e57dda667376, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  flavor_text: These must be decorative. I hope...
 --- !u!1001 &309261916
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3348,6 +3373,25 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 84395be60ff2def43bb58fa039614eab, type: 3}
+--- !u!1 &373084279 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7947911505737750455, guid: 8728cc48d2747494893fd60426c06f6e,
+    type: 3}
+  m_PrefabInstance: {fileID: 99427776}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &373084282
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 373084279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1adece6093c8406a828e57dda667376, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  flavor_text: Some kind of energy flows from them...
 --- !u!1001 &384328721
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3368,7 +3412,7 @@ PrefabInstance:
     - target: {fileID: 2055102311959635375, guid: 42d58802fe231b14c8692b0c06082f5d,
         type: 3}
       propertyPath: m_RootOrder
-      value: 13
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 2055102311959635375, guid: 42d58802fe231b14c8692b0c06082f5d,
         type: 3}
@@ -3598,7 +3642,7 @@ PrefabInstance:
     - target: {fileID: 2055102311959635375, guid: 413081fc53a78a043b38591243616398,
         type: 3}
       propertyPath: m_RootOrder
-      value: 15
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 2055102311959635375, guid: 413081fc53a78a043b38591243616398,
         type: 3}
@@ -3658,6 +3702,19 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 405736657}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &405736662
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 91470329}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1adece6093c8406a828e57dda667376, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  flavor_text: Who put this barrel here?
 --- !u!1001 &418384392
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3683,7 +3740,7 @@ PrefabInstance:
     - target: {fileID: 2577585254963922481, guid: fb2df5b680b64b449a78162ebcd98e97,
         type: 3}
       propertyPath: m_RootOrder
-      value: 14
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 2577585254963922481, guid: fb2df5b680b64b449a78162ebcd98e97,
         type: 3}
@@ -5980,6 +6037,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 634395202}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &635072349 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2577585254963922480, guid: fb2df5b680b64b449a78162ebcd98e97,
+    type: 3}
+  m_PrefabInstance: {fileID: 1589726214}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &638770015
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6562,6 +6625,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1beb61d6458d4e0282ceaca211d8f79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  flavor_text: 
   minReward: 1
   maxReward: 5
 --- !u!1001 &717808649
@@ -6638,6 +6702,12 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4581918338887155568, guid: 4800845c2c4caa84eb6194552ae9c841,
     type: 3}
   m_PrefabInstance: {fileID: 717808649}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &721272725 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5055698509961064897, guid: 6d6991dbbdeecb1488bbf78c063d1235,
+    type: 3}
+  m_PrefabInstance: {fileID: 776991269}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &731772102
 PrefabInstance:
@@ -6902,6 +6972,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1beb61d6458d4e0282ceaca211d8f79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  flavor_text: 
   minReward: 1
   maxReward: 5
 --- !u!1 &752274570
@@ -7106,6 +7177,19 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 776991269}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &776991273
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 721272725}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1adece6093c8406a828e57dda667376, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  flavor_text: Some kind of energy flows from them...
 --- !u!1001 &784286743
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7180,6 +7264,12 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4581918338887155568, guid: 4800845c2c4caa84eb6194552ae9c841,
     type: 3}
   m_PrefabInstance: {fileID: 784286743}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &790067365 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2055102311959635369, guid: 6242b925f1d3e0d44a183102cd3d4c26,
+    type: 3}
+  m_PrefabInstance: {fileID: 1649701360}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &862716322
 PrefabInstance:
@@ -7304,10 +7394,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1280, y: 720}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -7748,6 +7838,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1beb61d6458d4e0282ceaca211d8f79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  flavor_text: 
   minReward: 1
   maxReward: 5
 --- !u!1001 &884528780
@@ -7853,6 +7944,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1beb61d6458d4e0282ceaca211d8f79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  flavor_text: 
   minReward: 1
   maxReward: 5
 --- !u!1 &888717647
@@ -8481,6 +8573,25 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1 &889594305 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2055102311959635369, guid: 3fcd8726c7cd53345947949baefbab35,
+    type: 3}
+  m_PrefabInstance: {fileID: 290016995}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &889594308
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 889594305}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1adece6093c8406a828e57dda667376, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  flavor_text: These must be decorative. I hope...
 --- !u!1001 &913090549
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9143,6 +9254,12 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7947911505737750448, guid: d5762f992ea3bd544bb8287f66e8f844,
     type: 3}
   m_PrefabInstance: {fileID: 992073907}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1010696349 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1360264394729772843, guid: 4fad9c4de6b725a43bb1200ed9479c08,
+    type: 3}
+  m_PrefabInstance: {fileID: 1148653436}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1015822536
 PrefabInstance:
@@ -10055,6 +10172,19 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1148653436}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1148653440
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1010696349}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1adece6093c8406a828e57dda667376, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  flavor_text: Some kind of energy flows from them...
 --- !u!1001 &1152652332
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10595,6 +10725,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1179236117}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1197212458 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2055102311959635369, guid: 5c635e5bc09c93043a53ee0e17e89d0f,
+    type: 3}
+  m_PrefabInstance: {fileID: 1597344633}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1213630236
 GameObject:
   m_ObjectHideFlags: 0
@@ -10636,9 +10772,11 @@ MonoBehaviour:
     - I'm afraid you're a little short for this one.
     - All yours! No refunds on that one.
     - Sold out! Thanks for playing with me.
+    - I will only give you half the price for a used one.
   - type: 2
     responses:
-    - Ah, that's a wonderful color! And it suits you eyes too...
+    - Ah, yes! A timeless classic indeed.
+    - Ah, that's a wonderful color! And it suits your eyes too...
     - Excelent choice.
     - 'It''ll fit ya like your own. '
     - Beware of Cruella when wearing this one!
@@ -11420,7 +11558,7 @@ PrefabInstance:
     - target: {fileID: 2055102311959635375, guid: 413081fc53a78a043b38591243616398,
         type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 2055102311959635375, guid: 413081fc53a78a043b38591243616398,
         type: 3}
@@ -12656,6 +12794,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1404320733}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1425521799 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2577585254963922480, guid: fb2df5b680b64b449a78162ebcd98e97,
+    type: 3}
+  m_PrefabInstance: {fileID: 1428290699}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1426666932
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12886,7 +13030,7 @@ PrefabInstance:
     - target: {fileID: 2577585254963922481, guid: fb2df5b680b64b449a78162ebcd98e97,
         type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 2577585254963922481, guid: fb2df5b680b64b449a78162ebcd98e97,
         type: 3}
@@ -12946,6 +13090,19 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1428290699}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1428290704
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1425521799}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1adece6093c8406a828e57dda667376, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  flavor_text: Why is this one so far away from the others?
 --- !u!1001 &1451572451
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12966,7 +13123,7 @@ PrefabInstance:
     - target: {fileID: 2055102311959635375, guid: 413081fc53a78a043b38591243616398,
         type: 3}
       propertyPath: m_RootOrder
-      value: 12
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 2055102311959635375, guid: 413081fc53a78a043b38591243616398,
         type: 3}
@@ -13279,8 +13436,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1beb61d6458d4e0282ceaca211d8f79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  flavor_text: 
   minReward: 1
   maxReward: 5
+--- !u!1 &1488476768 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2055102311959635369, guid: 413081fc53a78a043b38591243616398,
+    type: 3}
+  m_PrefabInstance: {fileID: 1266905621}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1488476772
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1488476768}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1adece6093c8406a828e57dda667376, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  flavor_text: They seem to be filled with some kind of liquid...
 --- !u!1001 &1503142662
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13371,6 +13548,25 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1503142662}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1510980089 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2577585254963922480, guid: fb2df5b680b64b449a78162ebcd98e97,
+    type: 3}
+  m_PrefabInstance: {fileID: 1990667489}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1510980093
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1510980089}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1adece6093c8406a828e57dda667376, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  flavor_text: I wonder what's inside of this...
 --- !u!1001 &1513325296
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19926,6 +20122,25 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1578766417}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1587032091 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2577585254963922480, guid: fb2df5b680b64b449a78162ebcd98e97,
+    type: 3}
+  m_PrefabInstance: {fileID: 418384392}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1587032095
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1587032091}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1adece6093c8406a828e57dda667376, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  flavor_text: I wonder what's inside of this...
 --- !u!1001 &1589726214
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20011,6 +20226,19 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1589726214}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1589726219
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 635072349}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1adece6093c8406a828e57dda667376, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  flavor_text: I wonder what's inside of this...
 --- !u!1001 &1592348378
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20191,7 +20419,7 @@ PrefabInstance:
     - target: {fileID: 2055102311959635375, guid: 5c635e5bc09c93043a53ee0e17e89d0f,
         type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 2055102311959635375, guid: 5c635e5bc09c93043a53ee0e17e89d0f,
         type: 3}
@@ -20251,6 +20479,19 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1597344633}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1597344637
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1197212458}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1adece6093c8406a828e57dda667376, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  flavor_text: Shop up ahead! Goods for a fair price!
 --- !u!1001 &1598539559
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20429,6 +20670,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1beb61d6458d4e0282ceaca211d8f79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  flavor_text: 
   minReward: 1
   maxReward: 5
 --- !u!1 &1622717405 stripped
@@ -20449,6 +20691,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1beb61d6458d4e0282ceaca211d8f79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  flavor_text: 
   minReward: 1
   maxReward: 5
 --- !u!1001 &1639048816
@@ -20551,7 +20794,7 @@ PrefabInstance:
     - target: {fileID: 2055102311959635375, guid: 6242b925f1d3e0d44a183102cd3d4c26,
         type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 2055102311959635375, guid: 6242b925f1d3e0d44a183102cd3d4c26,
         type: 3}
@@ -20611,6 +20854,19 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1649701360}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1649701364
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 790067365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1adece6093c8406a828e57dda667376, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  flavor_text: These must be decorative. I hope...
 --- !u!1001 &1650394525
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21238,6 +21494,25 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1713392555}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1715137420 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2055102311959635369, guid: 413081fc53a78a043b38591243616398,
+    type: 3}
+  m_PrefabInstance: {fileID: 1451572451}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1715137424
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1715137420}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1adece6093c8406a828e57dda667376, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  flavor_text: They seem to be filled with some kind of liquid...
 --- !u!1001 &1725536931
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21615,7 +21890,7 @@ PrefabInstance:
     - target: {fileID: 2055102311959635375, guid: 413081fc53a78a043b38591243616398,
         type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 2055102311959635375, guid: 413081fc53a78a043b38591243616398,
         type: 3}
@@ -21803,6 +22078,25 @@ Grid:
   m_CellGap: {x: 0, y: 0, z: 0}
   m_CellLayout: 0
   m_CellSwizzle: 0
+--- !u!1 &1815390740 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2055102311959635369, guid: 42d58802fe231b14c8692b0c06082f5d,
+    type: 3}
+  m_PrefabInstance: {fileID: 384328721}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1815390743
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1815390740}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1adece6093c8406a828e57dda667376, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  flavor_text: This one HAS to be decorative... right?
 --- !u!1 &1839455664
 GameObject:
   m_ObjectHideFlags: 0
@@ -22039,18 +22333,18 @@ Transform:
   - {fileID: 1148653437}
   - {fileID: 99427777}
   - {fileID: 1589726215}
+  - {fileID: 1428290700}
+  - {fileID: 490916263}
+  - {fileID: 418384393}
   - {fileID: 133015537}
   - {fileID: 1649701361}
   - {fileID: 290016996}
   - {fileID: 1597344634}
-  - {fileID: 1428290700}
-  - {fileID: 490916263}
   - {fileID: 1783386372}
   - {fileID: 1266905622}
   - {fileID: 1451572452}
-  - {fileID: 384328722}
-  - {fileID: 418384393}
   - {fileID: 405736658}
+  - {fileID: 384328722}
   - {fileID: 2970963542718826761}
   m_Father: {fileID: 1730043294}
   m_RootOrder: 2
@@ -24752,7 +25046,7 @@ PrefabInstance:
     - target: {fileID: 2577585254963922481, guid: fb2df5b680b64b449a78162ebcd98e97,
         type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2577585254963922481, guid: fb2df5b680b64b449a78162ebcd98e97,
         type: 3}
@@ -25119,6 +25413,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1beb61d6458d4e0282ceaca211d8f79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  flavor_text: 
   minReward: 1
   maxReward: 5
 --- !u!1001 &1998615819
@@ -25201,6 +25496,25 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1998615819}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2028039770 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2055102311959635369, guid: 413081fc53a78a043b38591243616398,
+    type: 3}
+  m_PrefabInstance: {fileID: 1783386371}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2028039774
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2028039770}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1adece6093c8406a828e57dda667376, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  flavor_text: They seem to be filled with some kind of liquid...
 --- !u!1001 &2059068229
 PrefabInstance:
   m_ObjectHideFlags: 0

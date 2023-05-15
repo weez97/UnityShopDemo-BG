@@ -15,9 +15,16 @@ public class ScreenShop : UIScreen
 
     private string current_selection = "";
     private int current_price = 0;
+    private bool shop_selling = false;
 
+    // INVENTORY RELATED EVENTS
     public delegate void OnShopTransaction(string id, int price, bool sell = false);
     public static OnShopTransaction onShopTransaction;
+
+    // SHOPKEEPER RESPONSES
+    public delegate void OnShopKeeperResponse(string id);
+    public static OnShopKeeperResponse onShopKeeperResponse;
+
     protected override void Awake()
     {
         base.Awake();
@@ -40,6 +47,20 @@ public class ScreenShop : UIScreen
         current_selection = id;
         current_price = price;
 
+        // one extra validation for shopkeeper dialogues
+        bool owned = GameManager.instance.CheckOutfit(current_selection);
+        bool canAfford = GameManager.instance.PlayerMoney >= current_price;
+
+        if (!canAfford)
+            onShopKeeperResponse?.Invoke(DialogueLibrary.instance.GetResponse(EnumConfig.ResponseType.SHOP_TRANSACTION, 1));
+        else
+        {
+            if (!owned)
+                onShopKeeperResponse?.Invoke(DialogueLibrary.instance.GetResponse(EnumConfig.ResponseType.SHOP_GENERIC));
+            else
+                if (current_selection == "default")
+                onShopKeeperResponse?.Invoke(DialogueLibrary.instance.GetResponse(EnumConfig.ResponseType.SHOP_GENERIC, 0));
+        }
         UpdateButtons();
     }
 
@@ -60,12 +81,14 @@ public class ScreenShop : UIScreen
         {
             t.text = "Equip";
             buy_equip_btn.interactable = true;
+            shop_selling = false;
             return;
         }
 
         bool canAfford = GameManager.instance.PlayerMoney >= current_price;
 
         buy_equip_btn.interactable = canAfford;
+        shop_selling = canAfford;
     }
 
     private void OnDestroy()
@@ -75,6 +98,7 @@ public class ScreenShop : UIScreen
 
     public void Back()
     {
+        UiManager.instance.HideDialogue();
         UiManager.instance.ExitScreen("fadeOut", () =>
         {
             Shopkeeper.onInteract?.Invoke(false);
@@ -83,6 +107,9 @@ public class ScreenShop : UIScreen
 
     public void UseOutfit()
     {
+        if (shop_selling)
+            onShopKeeperResponse?.Invoke(DialogueLibrary.instance.GetResponse(EnumConfig.ResponseType.SHOP_TRANSACTION, 2));
+
         onShopTransaction?.Invoke(current_selection, current_price);
 
         UpdateButtons();
@@ -90,6 +117,8 @@ public class ScreenShop : UIScreen
 
     public void SellOutfit()
     {
+        onShopKeeperResponse?.Invoke(DialogueLibrary.instance.GetResponse(EnumConfig.ResponseType.SHOP_TRANSACTION, 4));
+
         onShopTransaction?.Invoke(current_selection, current_price / 2, true);
 
         UpdateButtons();

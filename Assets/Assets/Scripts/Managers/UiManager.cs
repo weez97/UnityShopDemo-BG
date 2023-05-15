@@ -109,8 +109,6 @@ public class UiManager : MonoBehaviour
 
     public void HideDialogue()
     {
-        dialogue.UpdateText("");
-
         if (dialogue.isShowing)
             dialogue.Hide();
     }

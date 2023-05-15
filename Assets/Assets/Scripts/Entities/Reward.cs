@@ -16,7 +16,7 @@ public class Reward : InteractableObject
     {
         if (!empty)
             StartCoroutine(IReward());
-        else 
+        else
             StartCoroutine(IEmpty());
     }
 
@@ -33,6 +33,7 @@ public class Reward : InteractableObject
         UiManager.instance.HideDialogue();
         onPay?.Invoke(amountToPay);
         empty = true;
+        yield return new WaitForSecondsRealtime(0.5f);
         onInteract?.Invoke(false);
     }
 
@@ -44,6 +45,7 @@ public class Reward : InteractableObject
         while (!Input.GetKeyDown(KeyCode.Space))
             yield return null;
         UiManager.instance.HideDialogue();
+        yield return new WaitForSecondsRealtime(0.5f);
         onInteract?.Invoke(false);
     }
 

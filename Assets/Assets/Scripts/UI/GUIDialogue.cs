@@ -26,16 +26,17 @@ public class GUIDialogue : GUIElement
 
     protected override void _Hide(bool immediate = false)
     {
-        base._Hide();
+
         rect.DOAnchorPos(hidePosition, immediate ? 0 : 0.45f).SetEase(Ease.OutSine).OnComplete(() =>
         {
             showing = false;
+            dialogue_txt.text = "";
         });
     }
 
     public void Hide()
     {
-        _Hide();
+        _Hide(false);
     }
 
     public void UpdateText(string text)

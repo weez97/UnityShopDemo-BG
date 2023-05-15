@@ -13,6 +13,7 @@ public class GameManager : MonoBehaviour
     private int player_wallet;
     public int PlayerMoney { get { return player_wallet; } }
     private List<string> owned_suits = new List<string>();
+    public bool IsEverthingOwned { get { return owned_suits.Count >= 5; } }
 
     private EnumConfig.GameState game_state; // serialized for visualization only
     public EnumConfig.GameState GameState

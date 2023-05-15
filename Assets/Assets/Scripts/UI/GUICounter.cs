@@ -9,6 +9,9 @@ public class GUICounter : GUIElement
     public Text txt;
     private int last_amount;
 
+    // to chain tweens mid animation
+    Tween myTween;
+
     protected override void Awake()
     {
         base.Awake();
@@ -32,24 +35,32 @@ public class GUICounter : GUIElement
     public override void Show(bool immediate = false)
     {
         c = 0;
-        base.Show();
+        if (myTween != null)
+        {
+            // catches tween if it is closing the counter, pauses and kills it, and allows the counter to start anew once again
+            myTween.Pause();
+            myTween.Kill();
+            showing = false;
+        }
+        if (showing) return;
+
+        showing = true;
         cg.DOFade(1, 0).OnComplete(() =>
         {
-            rect.DOAnchorPos(showPosition, immediate ? 0 : 0.85f).SetEase(Ease.OutElastic).OnComplete(() => { showing = true; });
+            rect.DOAnchorPos(showPosition, immediate ? 0 : 0.85f).SetEase(Ease.OutElastic);
         });
     }
 
     protected override void _Hide(bool immediate = false)
     {
         showing = false;
-        base._Hide();
-        cg.DOFade(0, immediate ? 0 : 0.65f).OnComplete(() =>
+        myTween = cg.DOFade(0, immediate ? 0 : 0.65f).OnComplete(() =>
         {
             rect.DOAnchorPos(hidePosition, 0);
         });
     }
 
-    public void UpdateCounter(int amount) 
+    public void UpdateCounter(int amount)
     {
         Show();
         txt.DOCounter(last_amount, amount, 1.25f);
