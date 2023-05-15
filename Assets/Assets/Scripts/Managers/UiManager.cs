@@ -68,6 +68,9 @@ public class UiManager : MonoBehaviour
             case "slideIn":
                 container.DOAnchorPos(targetPos, 1.67f).SetEase(Ease.OutQuint).OnComplete(callback);
                 break;
+            case "fadeIn":
+                container.GetComponent<CanvasGroup>().DOFade(1, 0.75f).SetEase(Ease.InSine).OnComplete(callback);
+                break;
             case "":
                 container.DOAnchorPos(targetPos, 0).OnComplete(callback);
                 break;
@@ -101,11 +104,11 @@ public class UiManager : MonoBehaviour
             dialogue.Show();
     }
 
-    public void HideDialogue() 
+    public void HideDialogue()
     {
         dialogue.UpdateText("");
 
-        if(dialogue.isShowing)
+        if (dialogue.isShowing)
             dialogue.Hide();
     }
 }

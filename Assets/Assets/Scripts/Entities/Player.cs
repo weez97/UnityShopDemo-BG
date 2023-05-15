@@ -33,6 +33,9 @@ public class Player : MonoBehaviour
         {
             Move();
             Interact();
+
+            if (Input.GetKeyDown(KeyCode.E))
+                ChangeOutfit();
         }
     }
 
@@ -117,5 +120,10 @@ public class Player : MonoBehaviour
         wallet += amount;
 
         UiManager.instance.counter.IncreaseCounter(wallet);
+    }
+
+    private void ChangeOutfit()
+    {
+        animator.runtimeAnimatorController = OutfitLibrary.instance.GetOutfit("batman");
     }
 }

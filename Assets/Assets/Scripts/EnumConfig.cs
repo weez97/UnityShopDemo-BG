@@ -7,7 +7,7 @@ public static class EnumConfig
 {
     public enum ScreenID
     {
-        NONE, MAIN_MENU, CREDITS, EXIT
+        NONE, MAIN_MENU, CREDITS, EXIT, SHOP
     }
 
     public enum GameState

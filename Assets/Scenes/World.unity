@@ -8968,6 +8968,7 @@ MonoBehaviour:
   screens:
   - {fileID: 6685766700573871435, guid: 063d835c2c5bf457784c72637b4761e2, type: 3}
   - {fileID: 4345123219539228833, guid: 2f40a09f828694051aad105ed1b3fa79, type: 3}
+  - {fileID: 2026145890286774693, guid: cbadf92e3b936104299a2b153ad5f120, type: 3}
 --- !u!1001 &978615495
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10594,8 +10595,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1213630238}
   - component: {fileID: 1213630237}
+  - component: {fileID: 1213630239}
   m_Layer: 0
-  m_Name: DialogueLibrary
+  m_Name: ResourceLibrary
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10645,6 +10647,29 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1213630239
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1213630236}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e5d43e84c37a7946824194e0264147e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outfits:
+  - id: default
+    outfit_anim: {fileID: 9100000, guid: eb1ae3e395b532e4d8dbc08a412e4a7d, type: 2}
+  - id: batman
+    outfit_anim: {fileID: 9100000, guid: 8c3bf6579dc08d44cba56e81b0a97367, type: 2}
+  - id: gray
+    outfit_anim: {fileID: 9100000, guid: de8d80da7703eb34d9e26559b20554b9, type: 2}
+  - id: hulk
+    outfit_anim: {fileID: 9100000, guid: d5ebac0e9e8b448499483d081114f7a6, type: 2}
+  - id: default
+    outfit_anim: {fileID: 9100000, guid: f3bd5727c2a8e6f41ad40969f1c3af91, type: 2}
 --- !u!1 &1216202779
 GameObject:
   m_ObjectHideFlags: 0
@@ -25699,6 +25724,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: GUICounter
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452801193501731968, guid: 5eb935e2e826e4cf0b40d61f57d4a807,
+        type: 3}
+      propertyPath: m_Type
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5eb935e2e826e4cf0b40d61f57d4a807, type: 3}
