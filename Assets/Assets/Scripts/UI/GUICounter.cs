@@ -1,10 +1,13 @@
 using UnityEngine;
 using DG.Tweening;
+using UnityEngine.UI;
 
 public class GUICounter : GUIElement
 {
     public float maxTime = 0;
     private float c;
+    public Text txt;
+    private int last_amount;
 
     protected override void Awake()
     {
@@ -14,6 +17,7 @@ public class GUICounter : GUIElement
     protected override void Start()
     {
         base.Start();
+        last_amount = 0;
     }
 
     protected override void Update()
@@ -21,7 +25,7 @@ public class GUICounter : GUIElement
         if (showing)
         {
             c += Time.deltaTime;
-            if (c >= maxTime) Hide();
+            if (c >= maxTime) _Hide();
         }
     }
 
@@ -35,13 +39,20 @@ public class GUICounter : GUIElement
         });
     }
 
-    protected override void Hide(bool immediate = false)
+    protected override void _Hide(bool immediate = false)
     {
         showing = false;
-        base.Hide();
+        base._Hide();
         cg.DOFade(0, immediate ? 0 : 0.65f).OnComplete(() =>
         {
             rect.DOAnchorPos(hidePosition, 0);
         });
+    }
+
+    public void IncreaseCounter(int amount) 
+    {
+        Show();
+        txt.DOCounter(last_amount, amount, 1.25f);
+        last_amount = amount;
     }
 }

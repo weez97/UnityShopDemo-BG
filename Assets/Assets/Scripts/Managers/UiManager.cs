@@ -10,6 +10,9 @@ public class UiManager : MonoBehaviour
     public Transform canvas;
     public Image background;
     public GUICounter counter;
+    public GUIDialogue dialogue;
+    private bool showingDialogue = false;
+    public bool ShowingDialogue => showingDialogue;
 
     // UIScreens
     public List<UIScreen> screens;
@@ -89,5 +92,20 @@ public class UiManager : MonoBehaviour
         background.DOFade(0, 0.75f);
     }
 
+    // DIALOGUES
+    public void ShowDialogue(string txt)
+    {
+        dialogue.UpdateText(txt);
 
+        if (!dialogue.isShowing)
+            dialogue.Show();
+    }
+
+    public void HideDialogue() 
+    {
+        dialogue.UpdateText("");
+
+        if(dialogue.isShowing)
+            dialogue.Hide();
+    }
 }

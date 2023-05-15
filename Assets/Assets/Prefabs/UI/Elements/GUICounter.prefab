@@ -213,6 +213,7 @@ MonoBehaviour:
   hidePosition: {x: -150, y: 60}
   startVisible: 0
   maxTime: 3.5
+  txt: {fileID: 2389488255803083285}
 --- !u!225 &7680421948204944185
 CanvasGroup:
   m_ObjectHideFlags: 0

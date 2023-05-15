@@ -45,8 +45,21 @@ public class GameManager : MonoBehaviour
         cam.lerpSpeed = 2.5f;
         cam.InitCamera();
 
+        InteractableObject.onInteract += OnInteract;
+
         // lastly, we start the game
         GameState = EnumConfig.GameState.GAME_RUNNING;
+    }
+
+    private void OnInteract(bool value)
+    {
+        if (value) GameState = EnumConfig.GameState.GAME_DIALOGUE;
+        else GameState = EnumConfig.GameState.GAME_RUNNING;
+    }
+
+    private void EndGame()
+    {
+
     }
 
 }

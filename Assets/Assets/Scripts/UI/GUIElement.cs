@@ -10,6 +10,7 @@ public abstract class GUIElement : MonoBehaviour
     protected CanvasGroup cg;
     protected RectTransform rect;
     protected bool showing;
+    public bool isShowing => showing;
 
     protected virtual void Awake()
     {
@@ -20,7 +21,7 @@ public abstract class GUIElement : MonoBehaviour
     protected virtual void Start()
     {
         if (!startVisible)
-            Hide(true);
+            _Hide(true);
     }
 
     protected virtual void Update()
@@ -33,7 +34,7 @@ public abstract class GUIElement : MonoBehaviour
 
     }
 
-    protected virtual void Hide(bool immediate = false)
+    protected virtual void _Hide(bool immediate = false)
     {
 
     }

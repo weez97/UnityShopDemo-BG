@@ -13,7 +13,7 @@ public class Player : MonoBehaviour
     public bool CanMove { set { can_move = value; } }
     private Vector2 last_dir;
 
-    private
+    private int wallet = 0;
 
     void Awake()
     {
@@ -24,7 +24,7 @@ public class Player : MonoBehaviour
 
     private void Start()
     {
-
+        Reward.onPay += GetPaid;
     }
 
     private void Update()
@@ -84,7 +84,7 @@ public class Player : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            RaycastHit2D hit = Physics2D.CircleCast(RayOrigin(), 0.15f, last_dir, 1.25f);
+            RaycastHit2D hit = Physics2D.CircleCast(RayOrigin(), 0.15f, last_dir, 0.025f);
 
             if (!hit) return;
 
@@ -92,7 +92,6 @@ public class Player : MonoBehaviour
 
             hit.transform.GetComponent<InteractableObject>().Interact();
         }
-        // UiManager.instance.counter.Show();
     }
 
     private Vector2 RayOrigin()
@@ -111,5 +110,12 @@ public class Player : MonoBehaviour
             x += (b_collider.size.x + b_collider.offset.x);
         return new Vector2(x, y + b_collider.offset.y);
 
+    }
+
+    private void GetPaid(int amount)
+    {
+        wallet += amount;
+
+        UiManager.instance.counter.IncreaseCounter(wallet);
     }
 }

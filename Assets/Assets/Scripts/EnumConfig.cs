@@ -12,7 +12,11 @@ public static class EnumConfig
 
     public enum GameState
     {
-        GAME_RUNNING, GAME_INIT, GAME_PAUSED
+        GAME_RUNNING, GAME_INIT, GAME_PAUSED, GAME_DIALOGUE
     }
 
+    public enum ResponseType 
+    {
+        REWARD, INTERACTABLE, SHOP_GENERIC, SHOP_TRANSACTION
+    }
 }
