@@ -14,12 +14,16 @@ public class Player : MonoBehaviour
     private Vector2 last_dir;
 
     private int wallet = 0;
+    private List<string> owned_outfits = new List<string>();
 
     void Awake()
     {
         animator = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
         b_collider = GetComponent<BoxCollider2D>();
+        
+        // add default outfit 
+        owned_outfits.Add("default");
     }
 
     private void Start()

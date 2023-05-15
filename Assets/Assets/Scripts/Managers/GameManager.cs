@@ -39,7 +39,7 @@ public class GameManager : MonoBehaviour
         ScreenMainMenu.onStartGame -= StartGame;
         if (player == null)
             player = Instantiate(playerFab).GetComponent<Player>();
-
+        
         CameraFollow cam = Camera.main.GetComponent<CameraFollow>();
         cam.target = player.transform;
         cam.lerpSpeed = 2.5f;

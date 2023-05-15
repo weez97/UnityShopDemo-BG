@@ -4,13 +4,11 @@ using UnityEngine;
 
 public class Shopkeeper : InteractableObject
 {
-    // Start is called before the first frame update
     void Start()
     {
         
     }
 
-    // Update is called once per frame
     void Update()
     {
         
@@ -21,5 +19,6 @@ public class Shopkeeper : InteractableObject
         base.Interact();
 
         UiManager.instance.ShowScreen(EnumConfig.ScreenID.SHOP, "fadeIn");
+        onInteract?.Invoke(true);
     }
 }

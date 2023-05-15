@@ -2,7 +2,7 @@ using UnityEngine;
 
 public abstract class UIScreen : MonoBehaviour
 {
-    private RectTransform container;
+    protected RectTransform container;
     public RectTransform Container => container;
 
 

@@ -69,7 +69,7 @@ public class UiManager : MonoBehaviour
                 container.DOAnchorPos(targetPos, 1.67f).SetEase(Ease.OutQuint).OnComplete(callback);
                 break;
             case "fadeIn":
-                container.GetComponent<CanvasGroup>().DOFade(1, 0.75f).SetEase(Ease.InSine).OnComplete(callback);
+                container.GetComponent<CanvasGroup>().DOFade(1, 0.4f).SetEase(Ease.InSine);
                 break;
             case "":
                 container.DOAnchorPos(targetPos, 0).OnComplete(callback);
@@ -83,6 +83,9 @@ public class UiManager : MonoBehaviour
         {
             case "slideOut":
                 active_screen.Container.DOAnchorPos(screen_start_pos, 1.0f).SetEase(Ease.OutQuad).OnComplete(callback);
+                break;
+            case "fadeOut":
+                active_screen.Container.GetComponent<CanvasGroup>().DOFade(0, 0.4f).SetEase(Ease.OutSine).OnComplete(callback);
                 break;
             case "":
                 active_screen.Container.DOAnchorPos(screen_start_pos, 0).OnComplete(callback);
